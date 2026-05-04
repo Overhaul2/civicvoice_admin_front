@@ -27,7 +27,10 @@ export default function LoginPage() {
   }
 
   const handleGuestAccess = () => {
-    navigate('/dashboard'); // Remplacez par votre route publique (ex: /home ou /projets)
+    navigate('/dashboard'); 
+  };
+   const handleGuestAdminAccess = () => {
+    navigate('/admin'); 
   };
 
   return (
@@ -71,6 +74,15 @@ export default function LoginPage() {
             style={{ marginTop: '12px', borderColor: '#ccc', color: '#666' }}
           >
             Continuer sans compte
+          </button>
+
+          <button 
+            type="button" 
+            onClick={handleGuestAdminAccess}
+            className="cv-btn cv-btn-outline cv-btn-full" 
+            style={{ marginTop: '12px', borderColor: '#ccc', color: '#666' }}
+          >
+            Admin sans compte
           </button>
         </form>
 
