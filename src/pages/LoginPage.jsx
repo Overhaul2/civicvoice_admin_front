@@ -67,14 +67,14 @@ export default function LoginPage() {
           <button type="submit" className="cv-btn cv-btn-primary cv-btn-full cv-btn-lg" disabled={loading}>
             {loading ? 'Connexion…' : 'Se connecter'}
           </button>
-          <button 
+          {/* <button 
             type="button" 
             onClick={handleGuestAccess}
             className="cv-btn cv-btn-outline cv-btn-full" 
             style={{ marginTop: '12px', borderColor: '#ccc', color: '#666' }}
           >
             Continuer sans compte
-          </button>
+          </button> */}
 
           <button 
             type="button" 
