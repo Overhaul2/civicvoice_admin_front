@@ -67,6 +67,7 @@ export default function LoginPage() {
           <button type="submit" className="cv-btn cv-btn-primary cv-btn-full cv-btn-lg" disabled={loading}>
             {loading ? 'Connexion…' : 'Se connecter'}
           </button>
+          <h3 style={{marginTop:10,color:'#ef0a0a'}}>Les identifiant pour se connecter pour le demo sont juste en bas .</h3>
           {/* <button 
             type="button" 
             onClick={handleGuestAccess}
@@ -76,14 +77,14 @@ export default function LoginPage() {
             Continuer sans compte
           </button> */}
 
-          <button 
+          {/* <button 
             type="button" 
             onClick={handleGuestAdminAccess}
             className="cv-btn cv-btn-outline cv-btn-full" 
             style={{ marginTop: '12px', borderColor: '#ccc', color: '#666' }}
           >
             Admin sans compte
-          </button>
+          </button> */}
         </form>
 
         <div className="cv-login-footer">
