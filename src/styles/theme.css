@@ -1,0 +1,47 @@
+/* ============================================================
+   THEME — CivicVote Mali
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Couleurs principales */
+  --primary:       #1A4B84;
+  --primary-dark:  #143a6b;
+  --primary-light: #2563a8;
+  --secondary:     #00913E;
+  --secondary-dark:#007a33;
+  --danger:        #E53E3E;
+  --danger-dark:   #c53030;
+  --warning:       #F59E0B;
+
+  /* Neutres */
+  --white:         #FFFFFF;
+  --bg:            #F5F7FA;
+  --card:          #FFFFFF;
+  --border:        #E2E8F0;
+  --text:          #1A202C;
+  --text-muted:    #607D8B;
+  --text-light:    #94A3B8;
+
+  /* Ombres */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow:     0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.12);
+
+  /* Rayon */
+  --radius-sm:  6px;
+  --radius:     10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+
+  /* Layout */
+  --sidebar-w:  230px;
+  --topbar-h:   64px;
+
+  /* Transitions */
+  --transition: 0.18s ease;
+
+  /* Typo */
+  --font: 'Inter', -apple-system, sans-serif;
+}
