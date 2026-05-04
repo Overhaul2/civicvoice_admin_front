@@ -90,10 +90,19 @@ export default function LoginPage() {
         <div className="cv-login-footer">
           <p>Pas encore de compte ? <a href="#">S'inscrire</a></p>
           {/* Comptes démo — retirer en production */}
-          <div style={{ marginTop: 16, padding: '10px 14px', background: '#f0f4ff', borderRadius: 8, fontSize: 12, textAlign: 'left' }}>
-            <strong>Comptes démo :</strong><br />
-            🟦 Citoyen : souleymane@civicvote.ml / Souleymane<br />
-            🔴 Admin : ibore@civicvote.ml / Ibrahim
+          <div style={{ marginTop: 20, padding: '12px', background: '#f8f9fa', borderRadius: 8, fontSize: 11, textAlign: 'left', borderLeft: '4px solid #0056b3' }}>
+            <strong style={{ display: 'block', marginBottom: '5px' }}>Comptes de démonstration :</strong>
+            
+            <div style={{ marginBottom: '8px' }}>
+              <span style={{ fontWeight: 'bold' }}>🟦 Citoyen :</span><br />
+              Email : <code style={{ color: '#d63384' }}>souleymane@civicvote.ml</code><br />
+              Mot de passe : <code style={{ color: '#d63384' }}>Souleymane</code>
+            </div>
+            <div style={{ marginBottom: '8px' }}>
+              <span style={{ fontWeight: 'bold' }}>🔴 Admin :</span><br />
+              Email : <code style={{ color: '#d63384' }}>ibore@civicvote.ml</code><br />
+              Mot de passe : <code style={{ color: '#d63384' }}>Ibrahim</code>
+            </div>
           </div>
         </div>
       </div>
