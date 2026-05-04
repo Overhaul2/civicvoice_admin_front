@@ -17,7 +17,7 @@ export default function LoginPage() {
     setLoading(true);
     setTimeout(() => {
       const result = login(email, password);
-      if (result.success) {
+      if (result) {
         navigate(result.role === 'ADMIN' ? '/admin' : '/dashboard');
       } else {
         setError('Email ou mot de passe incorrect.');
@@ -25,6 +25,10 @@ export default function LoginPage() {
       setLoading(false);
     }, 600);
   }
+
+  const handleGuestAccess = () => {
+    navigate('/dashboard'); // Remplacez par votre route publique (ex: /home ou /projets)
+  };
 
   return (
     <div className="cv-login-page">
@@ -59,6 +63,14 @@ export default function LoginPage() {
           </div>
           <button type="submit" className="cv-btn cv-btn-primary cv-btn-full cv-btn-lg" disabled={loading}>
             {loading ? 'Connexion…' : 'Se connecter'}
+          </button>
+          <button 
+            type="button" 
+            onClick={handleGuestAccess}
+            className="cv-btn cv-btn-outline cv-btn-full" 
+            style={{ marginTop: '12px', borderColor: '#ccc', color: '#666' }}
+          >
+            Continuer sans compte
           </button>
         </form>
 
